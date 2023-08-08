@@ -1,9 +1,25 @@
+body {
+    font-family: 'Metrophobic', sans-serif;
+}
+
+.heading-title {
+    font-family: 'Signika', sans-serif;
+}
+
 /* Styles the Home Page */
 
 /* Navagation Bar */
+
+.navbar-nav {
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
 .transparent-navbar {
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    background-color: rgba(28, 28, 28, 0.3);
+    backdrop-filter: blur(5px);
 }
 
 .transparent-navbar .navbar-brand,
@@ -11,9 +27,39 @@
     color: #fff;
 }
 
+
+/* Adding the top spacing for the main section */
 main {
-    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
+
+/* Adding the heading banner */
+.heading-banner {
+    margin-top: 100px;
+    background-image: url(/images/heading-banner.jpg) ;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+    text-align: right;
+}
+
+.heading-banner .containter {
+    padding-top: 100px;
+}
+
+.heading-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.heading-description {
+    font-size: 1.5 rem;
+}
+
+/* Style the image effects */
+
 
 /* Styles the Contact Us Page */
 body {
