@@ -13,18 +13,16 @@ h2 {
 
 /* Styles the Home Page */
 
-/* Navagation Bar */
-
-.navbar-nav {
-    margin: auto;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+/* Styles the Navagation Bar */
+.navbar-nav a:hover,
+.navbar-nav a:focus,
+.navbar-nav a.current {
+    background-color: #61616163;
 }
 
 .transparent-navbar {
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 }
 
 .transparent-navbar .navbar-brand,
@@ -57,7 +55,7 @@ h2 {
 }
 
 .heading-description {
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
 }
 
 /* Styles the Contact Us Section in the Homepage */
@@ -124,3 +122,11 @@ h2 {
 }
 
 /* Styles the Our Works Page */
+.img-thumbnail {
+    transition: transform 0.3s;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
