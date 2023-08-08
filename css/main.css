@@ -1,4 +1,21 @@
-/* Styles the Contact us page */
+/* Styles the Home Page */
+
+/* Navagation Bar */
+.transparent-navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.transparent-navbar .navbar-brand,
+.transparent-navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+main {
+    padding-top: 80px;
+}
+
+/* Styles the Contact Us Page */
 body {
     background-color: #f8f9fa;
 }
