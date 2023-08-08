@@ -1,5 +1,6 @@
+/* Global Styles */
 body {
-    font-family: 'Metrophobic', sans-serif;
+    font-family: 'Almarai', sans-serif;
 }
 
 .heading-title {
@@ -28,24 +29,18 @@ body {
 }
 
 
-/* Adding the top spacing for the main section */
-main {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-/* Adding the heading banner */
+/* Adds and Styles the Heading Banner */
 .heading-banner {
-    margin-top: 100px;
-    background-image: url(images/heading-banner.jpg);
+    background-image: url(../images/heading-banner.jpg);
     background-size: cover;
     background-position: center;
+    margin-top: 100px;
     color: #fff;
     text-align: right;
 }
 
-.heading-banner .containter {
-    padding-top: 100px;
+.heading-banner .container {
+    padding: 120px;
 }
 
 .heading-title {
@@ -56,9 +51,6 @@ main {
 .heading-description {
     font-size: 1.5 rem;
 }
-
-/* Style the image effects */
-
 
 /* Styles the Contact Us Page */
 body {
