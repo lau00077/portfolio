@@ -7,6 +7,10 @@ body {
     font-family: 'Signika', sans-serif;
 }
 
+h2 {
+    color: #93bef6;
+}
+
 /* Styles the Home Page */
 
 /* Navagation Bar */
@@ -19,7 +23,7 @@ body {
 }
 
 .transparent-navbar {
-    background-color: rgba(28, 28, 28, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
 }
 
@@ -27,7 +31,6 @@ body {
 .transparent-navbar .navbar-nav .nav-link {
     color: #fff;
 }
-
 
 /* Adds and Styles the Heading Banner */
 .heading-banner {
@@ -43,6 +46,11 @@ body {
     padding: 120px;
 }
 
+.heading-text {
+    background-color: rgba(125, 125, 125, 0.3);
+    border-radius: 10px;
+}
+
 .heading-title {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -52,16 +60,32 @@ body {
     font-size: 1.5 rem;
 }
 
-/* Styles the Contact Us Page */
-body {
-    background-color: #f8f9fa;
+/* Styles the Contact Us Section in the Homepage */
+.contact img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
 }
 
+.contact img:hover {
+    transform: scale(1.1);
+}
+
+/* Styles the Contact Us Page */
+#contact-us {
+    padding-top: 80px;
+}
+
+.h3 strong {
+    color: #669de5;
+}
+
+/* Styles the Contact Us Form */
 .contact-container {
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 30px;
-    background-color: #ffffff;
+    padding: 20px;
+    /* background-color: #ffffff; */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -70,7 +94,7 @@ body {
     margin-bottom: 20px;
 }
 
-.form-group label {
+.form-label {
     font-weight: bold;
     color: #333;
 }
@@ -88,16 +112,14 @@ body {
     min-height: 100px;
 }
 
-.btn-submit {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+/* Styles the Form Button */
+.btn-light {
+    background-color: #93bef6;
+    color: white;
 }
 
-.btn-submit:hover {
-    background-color: #0056b3;
+.btn-light:hover {
+    background-color: #669de5;
+    color: white;
 }
+
