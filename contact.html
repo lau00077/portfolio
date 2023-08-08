@@ -28,7 +28,7 @@
 <body class="py-4">
     <header>
         <!-- Adding a navagation bar -->
-        <nav class="navbar navbar-expand-lg transparent-navbar fixed-top navbar-dark">
+        <nav class="navbar navbar-expand-lg transparent-navbar fixed-top navbar-dark" role="navigation" id="navbarNav">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
                     <img src="images/Logo.png" alt="Site Logo" width="100">
@@ -37,24 +37,24 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 column-gap-5">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">HOME<span class="sr-only"></span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="works.html">OUR WORKS</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        <li class="nav-item active">
+                            <a class="nav-link current" href="contact.html">CONTACT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link align-self-center" href="https://www.linkedin.com/in/fayelau">
+                            <a class="nav-link align-self-center" href="https://www.linkedin.com/in/fayelau" aria-label="LinkedIn">
                                 <img src="images/In-White.png" alt="LinkedIn" width="30">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link align-self-center" href="https://www.instagram.com/fayelau/">
+                            <a class="nav-link align-self-center" href="https://www.instagram.com/fayelau/" aria-label="Instagram">
                                 <img src="images/insta_white.png" alt="Instagram" width="30">
                             </a>
                         </li>
@@ -62,72 +62,61 @@
                 </div>
             </div>
         </nav>
-
-        <!-- Adding Heading Banner -->
-        <!-- <div class="heading-banner">
-      <div class="container">
-        <h1 class="heading-title">“Carve Your Own Path this Winter”</h1>
-        <p class="heading-descrption">
-          Snowscape
-        </p>
-      </div>
-    </div> -->
-
     </header>
 
     <main>
-        <section id="contact-us">
+        <section id="contact-us" role="region" aria-labelledby="contact-heading">
             <div class="container text-center py-5">
                 <h2 class="text-center mb-4 fw-bold">Contact</h2>
                 <h3 class="h3 fw-semibold">
                     <strong>lau00077</strong>@algonquinlive.com</h3>
             </div>
 
-            <div id="contact-form" class="py-5">
+            <div id="contact-form" class="py-5" role="form" aria-labelledby="contact-heading">
                 <div class="contact-container">
                     <div class="row">
                         <div class="col-md-6 offset-md-3">
                             <h3 class="text-center mb-4" id="contact-heading">
-                                "Plan Your Ride in Advance: Carve Your Path to Adventure!"</h2>
-                            <form aria-labelledby="contact-heading">
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea name="WHat do you wanna tall " class="form-control" id="message" rows="4"
-                                        required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-light" aria-label="Send Message">Send
-                                    Message</button>
-                            </form>
+                                "Plan Your Ride in Advance: Carve Your Path to Adventure!"</h3>
+                                <form aria-labelledby="contact-heading">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea name="WHat do you wanna tall " class="form-control" id="message"
+                                            rows="4" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-light" aria-label="Send Message">Send
+                                        Message</button>
+                                </form>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="location-map text-center">
-                <h2 class="text-center mb-4 fw-semibold">Location</h3>
-                <p class="lead">1385 Woodroffe Ave, Nepean, ON K2G 1V8</p>
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4784.711033225919!2d-75.76044367478123!3d45.350600453053815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680030012983!5m2!1sen!2sca"
-                        width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
+            <div class="location-map text-center" role="region">
+                <h2 class="text-center mb-4 fw-semibold">Location</h2>
+                    <p class="lead">1385 Woodroffe Ave, Nepean, ON K2G 1V8</p>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4784.711033225919!2d-75.76044367478123!3d45.350600453053815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680030012983!5m2!1sen!2sca"
+                            width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
             </div>
 
         </section>
     </main>
 
-    <!-- Addinh a copyright footer -->
-    <footer class="bg-dark text-white py-3">
+    <!-- Adding a copyright footer -->
+    <footer class="bg-dark text-white py-3" role="contentinfo">
         <div class="container text-center">
             <p>&copy; 2023 Faye's Designs. All rights reserved.</p>
         </div>

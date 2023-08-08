@@ -14,31 +14,31 @@
   <!-- Font Link Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;800&family=Metrophobic&family=Signika:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Icon Link Styles -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;800&family=Metrophobic&family=Signika:wght@400;700&display=swap"
+    rel="stylesheet">
 
   <!-- Link to CSS style sheet -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="py-4">
+  
   <header>
-    <!-- Adding a navagation bar -->
-    <nav class="navbar navbar-expand-lg transparent-navbar fixed-top navbar-dark">
+    <!-- Adding a navigation bar -->
+    <nav class="navbar navbar-expand-lg transparent-navbar fixed-top navbar-dark" id="navbarNav" role="navigation">
       <div class="container">
-        <a href="index.html" class="navbar-brand">
+        <a href="index.html" class="navbar-brand current">
           <img src="images/Logo.png" alt="Site Logo" width="100">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 column-gap-5">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">HOME<span class="sr-only"></span></a>
+              <a class="nav-link current" href="index.html">HOME<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="works.html">OUR WORKS</a>
@@ -47,12 +47,12 @@
               <a class="nav-link" href="contact.html">CONTACT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link align-self-center" href="https://www.linkedin.com/in/fayelau">
-                <img src="images/In-White.png" alt="LinkedIn" width="30">
+              <a class="nav-link align-self-center" href="https://www.linkedin.com/in/fayelau" aria-label="LinkedIn">
+                <img src="images/In-White.png" alt="Linkedin" width="30">
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link align-self-center" href="https://www.instagram.com/fayelau/">
+              <a class="nav-link align-self-center" href="https://www.instagram.com/fayelau/" aria-label="Instagram">
                 <img src="images/insta_white.png" alt="Instagram" width="30">
               </a>
             </li>
@@ -65,91 +65,105 @@
     <div class="heading-banner">
       <div class="container">
         <div class="heading-text">
-        <h1 class="heading-title">“Carve Your Own Path this Winter”</h1>
-        <p class="heading-descrption">
-          Snowscape
-        </p>
+          <h1 class="heading-title">“Carve Your Own Path this Winter”</h1>
+          <p class="heading-description">
+            Snowscape
+          </p>
         </div>
       </div>
     </div>
 
   </header>
 
-  <main>
-  <!-- About Me Section -->
-  <section id="about-me">
-    <div class="container">
-      <h2 class="text-center py-4 mb-4 fw-bold">ABOUT ME</h2>
-      <div class="row">
-        <!-- Image Column -->
-        <div class="col-md-6 py-2">
-          <img src="images/founder.JPG" width="500" class="img-fluid" alt="Founder Image">
-        </div>
-        <!-- Description Column -->
-        <div class="col-md-6 d-flex align-items-center">
-          <div>
-            <h3 class="mb-4 text-center fw-semibold"> Ride with Faye</h5>
-              <p class="lead">Faye is a visionary snowboarding enthusiast with a profound passion for the sport. With years of experience carving the slopes and a deep appreciation for the mountains, Faye envisioned creating a snowboarding school that would provide a transformative experience for every student. As a certified snowboarding instructor, Faye brings a wealth of expertise, leadership, and a commitment to fostering a welcoming community within the snowboarding world.</p>
+  <main id="main-content">
+    <!-- About Me Section -->
+    <section id="about-me" role="region" aria-labelledby="about-me-heading">
+      <div class="container">
+        <h2 class="text-center py-4 mb-4 fw-bold" id="about-me-heading">ABOUT ME</h2>
+        <div class="row">
+          <!-- Image Column -->
+          <div class="col-md-6 py-2">
+            <picture>
+              <source media="(min-width: 992px)" srcset="images/founder-lg.jpg">
+              <img src="images/founder-sm.jpg" width="500" class="img-fluid" alt="Founder Image">
+            </picture>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4 fw-bold">What are we offering?</h2>
-      <!-- Adding Services Column -->
-      <div class="row">
-        <!-- Photography section -->
-        <div class="col-md-4">
-          <div class="box mb-4">
-            <img src="images/photography.png" class="box-img img-fluid" alt="Photography Service">
-            <div class="box-body text-center pt-3">
-              <h5 class="box-title fw-semibold">Photography Service</h5>
-              <p class="box-text">We offer professional photography services, capturing exhilarating moments on the slopes. Continuous feedback and flexibility ensure exceptional service.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Videography section -->
-        <div class="col-md-4">
-          <div class="box mb-4">
-            <img src="images/snowboarder.png" class="box-img img-fluid" alt="Snowboarder">
-            <div class="box-body text-center pt-3">
-              <h5 class="box-title fw-semibold">Videography Service</h5>
-              <p class="box-text">Our skilled team captures every exhilarating moment on the slopes, turning your snowboarding adventures into cinematic masterpieces. From breathtaking jumps and heart-pounding descents to stylish tricks and awe-inspiring scenery, we ensure that every epic move and scenic view is beautifully documented. </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Snowboarding Instruction section -->
-        <div class="col-md-4">
-          <div class="box mb-4">
-            <img src="images/big-air-jump.png" class="box-img img-fluid" alt="Big Air Jump">
-            <div class="box-body text-center pt-3">
-              <h5 class="box-title fw-semibold">Tailored Snowboarding Experiences</h5>
-              <p class="box-text">Our instructors combine their extensive snowboarding expertise with a passion for teaching, ensuring that you receive focused guidance and support. Through one-on-one sessions or small group settings, we break down complex maneuvers, provide real-time feedback, and help you master essential skills, from carving smooth turns to nailing challenging tricks. </p>
+          <!-- Description Column -->
+          <div class="col-md-6 d-flex align-items-center">
+            <div>
+              <h3 class="mb-4 text-center fw-semibold"> Ride with Faye</h3>
+                <p class="lead">Faye is a visionary snowboarding enthusiast with a profound passion for the sport. With
+                  years of experience carving the slopes and a deep appreciation for the mountains, Faye envisioned
+                  creating a snowboarding school that would provide a transformative experience for every student. As a
+                  certified snowboarding instructor, Faye brings a wealth of expertise, leadership, and a commitment to
+                  fostering a welcoming community within the snowboarding world.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Us Section -->
-  <section id="contact" class="py-5 bg-light contact">
-    <div class="container text-center">
-      <h2 class="text-center mb-4 fw-bold">CONTACT US</h2>
-      <a href="contact.html">
-        <img class="img-fluid" src="images/contact-us.png" width="500" alt="Contact Us">
-      </a>
-    </div>
-  </section>
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-bold">What are we offering?</h2>
+        <!-- Adding Services Column -->
+        <div class="row">
+          <!-- Photography section -->
+          <div class="col-md-4">
+            <div class="box mb-4">
+              <img src="images/photography.png" class="box-img img-fluid" alt="Photography Service">
+              <div class="box-body text-center pt-3">
+                <h5 class="box-title fw-semibold">Photography Service</h5>
+                <p class="box-text">We offer professional photography services, capturing exhilarating moments on the
+                  slopes. Continuous feedback and flexibility ensure exceptional service.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Videography section -->
+          <div class="col-md-4">
+            <div class="box mb-4">
+              <img src="images/snowboarder.png" class="box-img img-fluid" alt="Snowboarder">
+              <div class="box-body text-center pt-3">
+                <h5 class="box-title fw-semibold">Videography Service</h5>
+                <p class="box-text">Our skilled team captures every exhilarating moment on the slopes, turning your
+                  snowboarding adventures into cinematic masterpieces. From breathtaking jumps and heart-pounding
+                  descents to stylish tricks and awe-inspiring scenery, we ensure that every epic move and scenic view
+                  is beautifully documented. </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Snowboarding Instruction section -->
+          <div class="col-md-4">
+            <div class="box mb-4">
+              <img src="images/big-air-jump.png" class="box-img img-fluid" alt="Big Air Jump">
+              <div class="box-body text-center pt-3">
+                <h5 class="box-title fw-semibold">Tailored Snowboarding Experiences</h5>
+                <p class="box-text">Our instructors combine their extensive snowboarding expertise with a passion for
+                  teaching, ensuring that you receive focused guidance and support. Through one-on-one sessions or small
+                  group settings, we break down complex maneuvers, provide real-time feedback, and help you master
+                  essential skills, from carving smooth turns to nailing challenging tricks. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-5 bg-light contact" role="region" aria-labelledby="contact-heading">
+      <div class="container text-center">
+        <h2 class="text-center mb-4 fw-bold" id="contact-heading">CONTACT US</h2>
+        <a href="contact.html">
+          <img class="img-fluid" alt="Contact Us" src="images/contact-us.png" width="500">
+        </a>
+      </div>
+    </section>
   </main>
 
-  <!-- Addinh a copyright footer -->
-  <footer class="bg-dark text-white py-3">
+  <!-- Adding a copyright footer -->
+  <footer class="bg-dark text-white py-3" role="contentinfo">
     <div class="container text-center">
       <p>&copy; 2023 Faye's Designs. All rights reserved.</p>
     </div>

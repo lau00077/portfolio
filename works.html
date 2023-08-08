@@ -28,7 +28,7 @@
 <body class="py-4">
     <header>
         <!-- Adding a navagation bar -->
-        <nav class="navbar navbar-expand-lg transparent-navbar fixed-top navbar-dark">
+        <nav class="navbar navbar-expand-lg transparent-navbar fixed-top navbar-dark" id="navbarNav" role="navigation">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
                     <img src="images/Logo.png" alt="Site Logo" width="100">
@@ -37,24 +37,24 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 column-gap-5">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">HOME<span class="sr-only"></span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="works.html">OUR WORKS</a>
+                        <li class="nav-item active">
+                            <a class="nav-link current" href="works.html">OUR WORKS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">CONTACT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link align-self-center" href="https://www.linkedin.com/in/fayelau">
+                            <a class="nav-link align-self-center" href="https://www.linkedin.com/in/fayelau" aria-label="LinkedIn">
                                 <img src="images/In-White.png" alt="LinkedIn" width="30">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link align-self-center" href="https://www.instagram.com/fayelau/">
+                            <a class="nav-link align-self-center" href="https://www.instagram.com/fayelau/" aria-label="Instagram">
                                 <img src="images/insta_white.png" alt="Instagram" width="30">
                             </a>
                         </li>
@@ -64,11 +64,11 @@
         </nav>
 
         <!-- Adding Heading Banner -->
-        <div class="heading-banner">
+        <div class="heading-banner" role="banner">
             <div class="container">
                 <div class="heading-text">
                     <h1 class="heading-title">“Carve Your Own Path this Winter”</h1>
-                    <p class="heading-descrption">
+                    <p class="heading-description">
                         Snowscape
                     </p>
                 </div>
@@ -78,81 +78,85 @@
 
     <main>
         <div class="container py-5">
-            <h2 class="text-center mb-4 fw-bold">OUR WORKS</h1>
-            <!-- Adding a photo gallery -->
-            <hr class="mt-2 mb-5">
+            <h2 class="text-center mb-4 fw-bold">OUR WORKS</h2>
+                <!-- Adding a photo gallery -->
+                <hr class="mt-2 mb-5">
 
-            <div class="row text-center text-lg-start">
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="images/squirrel-1-lg.jpg" class="d-block mb-5 h-100">
-                        <picture>
-                            <source media="(min-width: 992px)" srcset="images/squirrel-1-lg.jpg">
-                        </picture>
-                        <img src="images/squirrel-1-sm.jpg" alt="Squirrel" class="img-fluid img-thumbnail">
-                    </a>
+                <div class="row text-center text-lg-start">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/squirrel-1-lg.jpg" class="d-block mb-5 h-100">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/squirrel-1-lg.jpg">
+                                <img src="images/squirrel-1-sm.jpg" alt="Squirrel" class="img-fluid img-thumbnail">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/squirrel-2-lg.jpg" class="d-block mb-5 h-100">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/squirrel-2-lg.jpg">
+                                <img src="images/squirrel-2-sm.jpg" alt="Squirrel" class="img-fluid img-thumbnail">
+                            </picture>
+                            
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/portrait-snow-lg.jpg" class="d-block mb-5 h-100">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/portrait-snow-lg.jpg">
+                                <img src="images/portrait-snow-sm.jpg" alt="Lady in the snow"
+                                class="img-fluid img-thumbnail">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/portrait-lg.jpg" class="d-block mb-5 h-100">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/portrait-lg.jpg">
+                                <img src="images/portrait-sm.jpg" alt="Lady in the snow" class="img-fluid img-thumbnail">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/light-trail-lg.jpg" class="d-block mb-5 h-100">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/light-trail-lg.jpg">
+                                <img src="images/light-trail-sm.jpg" alt="Light Trail" class="img-fluid img-thumbnail">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/china-town-chinese-lg.jpg" class="d-block mb-4 h-100">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/china-town-chinese-lg.jpg">
+                                <img src="images/china-town-chinese-sm.jpg" alt="China Town Restarant"
+                                class="img-fluid img-thumbnail">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/china-town-school-bus-lg.jpg" class="d-block mb-4 h-100">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/china-town-school-bus-lg.jpg">
+                                <img src="images/china-town-school-bus-sm.jpg" alt="Bus at China Town"
+                                class="img-fluid img-thumbnail">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/depth-of-field-lg.jpg" class="d-block mb-5 h-100">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/depth-of-field-lg.jpg">
+                                <img src="images/depth-of-field-sm.jpg" alt="South Park" class="img-fluid img-thumbnail">
+                            </picture>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="images/squirrel-2-lg.jpg" class="d-block mb-5 h-100">
-                        <picture>
-                            <source media="(min-width: 992px)" srcset="images/squirrel-2-lg.jpg">
-                        </picture>
-                        <img src="images/squirrel-2-sm.jpg" alt="Squirrel" class="img-fluid img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="images/portrait-snow-lg.jpg" class="d-block mb-5 h-100">
-                        <picture>
-                            <source media="(min-width: 992px)" srcset="images/portrait-snow-lg">
-                        </picture>
-                        <img src="images/portrait-snow-sm.jpg" alt="Lady in the snow" class="img-fluid img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="images/portrait-lg.jpg" class="d-block mb-5 h-100">
-                        <picture>
-                            <source media="(min-width: 992px)" srcset="images/portrait-lg">
-                        </picture>
-                        <img src="images/portrait-sm.jpg" alt="Lady in the snow" class="img-fluid img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="images/light-trail-lg.jpg" class="d-block mb-5 h-100">
-                        <picture>
-                            <source media="(min-width: 992px)" srcset="images/light-trail-lg">
-                        </picture>
-                        <img src="images/light-trail-sm.jpg" alt="Light Trail" class="img-fluid img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="images/china-town-chinese-lg.jpg" class="d-block mb-4 h-100">
-                        <picture>
-                            <source media="(min-width: 992px)" srcset="images/china-town-chinese-lg">
-                        </picture>
-                        <img src="images/china-town-chinese-sm.jpg" alt="China Town Restarant" class="img-fluid img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="images/china-town-school-bus-lg.jpg" class="d-block mb-4 h-100">
-                        <picture>
-                            <source media="(min-width: 992px)" srcset="images/china-town-school-bus-lg">
-                        </picture>
-                        <img src="images/china-town-school-bus-sm.jpg" alt="Bus at China Town" class="img-fluid img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="images/depth-of-field-lg.jpg" class="d-block mb-5 h-100">
-                        <picture>
-                            <source media="(min-width: 992px)" srcset="images/depth-of-field-lg.jpg">
-                        </picture>
-                        <img src="images/depth-of-field-sm.jpg" alt="South Park" class="img-fluid img-thumbnail">
-                    </a>
-                </div>
-            </div>
         </div>
     </main>
 
-    <!-- Addinh a copyright footer -->
-    <footer class="bg-dark text-white py-3">
+    <!-- Adding a copyright footer -->
+    <footer class="bg-dark text-white py-3" role="contentinfo">
         <div class="container text-center">
             <p>&copy; 2023 Faye's Designs. All rights reserved.</p>
         </div>
