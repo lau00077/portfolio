@@ -15,13 +15,12 @@ h2 {
 /* Change the link color on hover */
 #mainnav-item:hover,
 #mainnav-item:focus {
-    color: #c0dbff;
+    color: #f2e2f6;
 }
 
 /* Active/Current Navigation */
 .active #mainnav-item {
-    color: #2f435d;
-    ;
+    color: #c0dbff;
   }
 
 .transparent-navbar {
