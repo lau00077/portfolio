@@ -11,18 +11,22 @@ h2 {
     color: #93bef6;
 }
 
-/* Styles the Home Page */
 
-/* Styles the Navagation Bar */
-.navbar-nav a:hover,
-.navbar-nav a:focus,
-.navbar-nav a.current {
-    background-color: #61616163;
+/* Change the link color on hover */
+#mainnav-item:hover,
+#mainnav-item:focus {
+    color: #c0dbff;
 }
+
+/* Active/Current Navigation */
+.active #mainnav-item {
+    color: #2f435d;
+    ;
+  }
 
 .transparent-navbar {
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
 }
 
 .transparent-navbar .navbar-brand,
@@ -41,7 +45,7 @@ h2 {
 }
 
 .heading-banner .container {
-    padding: 120px;
+    padding: 80px;
 }
 
 .heading-text {
